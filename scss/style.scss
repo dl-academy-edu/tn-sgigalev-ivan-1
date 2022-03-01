@@ -2,12 +2,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 
+//Оболочка
+
 .wrapper {
    min-height: 100%;
    overflow: hidden;
    display: flex;
    flex-direction: column;
 }
+
+//Кнопка
 
 .btn {
    color: #FFFFFF;
@@ -20,7 +24,10 @@
    text-transform: uppercase;
    max-width: 161px;
    max-height: 40px;
+	text-align: center;
 }
+
+// Products
 
 .item {
 	font-family: Montserrat;
@@ -34,31 +41,89 @@
 
 }
 
-.title {}
+// Заголовок
 
-.ftr {}
+.title {
+	font-family: Montserrat;
+   font-weight: bold;
+   font-size: 38px;
+   line-height: 46px;
+   text-transform: uppercase;
+   color: #1E0606;
+   margin: 0px 0px 27px 0px;
+}
+
+// Ссылки
+
+.page__link{
+font-family: Crimson Text;
+font-style: italic;
+font-size: 20px;
+line-height: 25px;
+color: #1E0606;
+&::after{
+	margin: 0px 20px 0px 0px;	
+	content: url(/images/icons/tick.svg);
+}
+}
+
+//Ссылки по сайту
+
+.main__nav_page{
+	display: flex;	
+	& li:last-child {
+		opacity: 0.5;
+	}
+}
+
+
+.main__forms_row{
+	display: flex;
+}
+
+
+//Подвал
+
+.ftr {
+font-family: "Open Sans";
+font-size: 16px;
+line-height: 22px;
+color: #AAAAAA;
+padding: 0px 0px 28px 0px;
+border-bottom: 1px solid #666666;
+}
+
+//Контейнер
 
 .container {
    padding: 50px 100px 110px 100px;
    max-width: 1180px;
    margin: 0 auto;
+	
 }
 
+//Хэдер
+
 .header {
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   margin: 0px 0px 129px 0px;
    text-transform: uppercase;
    font-size: 14px;
    line-height: 19px;
-	
-
+	margin: 0px 0px 40px 0px;
+   align-items: center;
 }
 
-.header__nav {
+.header__row{
+	display: flex;
+   justify-content: space-between;
+}
+
+
+.header__logo{
+	margin: 0px 30px 0px 0px;
+	}
 	
-   margin: 0px 0px 0px 60px;
+.header__nav {
+	margin: 0px 0px 0px 30px;
    flex: 1 1 auto;
    display: flex;
    font-family: 'Lato', sans-serif;
@@ -75,147 +140,56 @@
       color: #1E0606;
    }
 }
-
 .header__link {}
-
 .header__search {
    margin: 0px 24px 0px 0px;
 }
-
 .header__contact_link {
    color: #1E0606;
    font-weight: 700;
 }
 
-.main {
-   flex: 1 1 auto;
-	position: relative;
-}
-
-.main__header {
-   z-index: 0;
-   position: relative;
-   background: #EEE4DB;
-   height: 372px;
-   display: flex;
-   flex-direction: column;
-   padding: 89px 0px 0px 133px;
-}
-
-.main__header_img{
-	position: absolute;
-	right: 0;
-	bottom: 0;
-	padding: 0px 100px 0px 0px;
-}
-
-.main__header_title {
-   font-family: Montserrat;
-   font-weight: bold;
-   font-size: 40px;
-   line-height: 110%;
-   margin: 0px 0px 20px 0px;
-}
-
-.main__header_subtitle {
-   font-family: Crimson Text;
-   font-style: italic;
-   font-size: 20px;
-   line-height: 25px;
-   margin: 0px 0px 20px 0px;
-}
-
-.main__header_button {
-   display: flex;
-   flex: 1 1 auto;
-}
-
-.main__header_text {
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   height: 39px;
-   background-color: #C29974;
-   font-family: Lato;
-   font-weight: 500;
-   font-size: 12px;
-   line-height: 16px;
-   color: #FFFFFF;
-   text-transform: uppercase;
-   margin: 0px 0px 90px 0px;
-}
-
-
-.main__products {}
-
-.main__products_title {
-   font-family: Montserrat;
-   font-weight: bold;
-   font-size: 38px;
-   line-height: 46px;
-   text-transform: uppercase;
-   color: #1E0606;
-   margin: 0px 0px 27px 0px;
-}
-
-.main__products_items ul {
-	display: flex;
-	justify-content: space-between;
-	max-width: 300px;
-	max-height: 300px;
-}
-
-.main__products_item1 {
-	position: relative;
-   background: url('../images/products/product1.jpg');
-}
-
-.main__products_link {}
-
-.main__products_slider {}
-
-.main__products_text {}
-
-.delivery {}
-
-.delivery__image {}
-
-.delivery__description {}
-
-.delivery_title {}
-
-.delivery_subtitle {}
-
-.labels {}
-
-.main__footer {}
-
-.main__footer_about {}
-
-.main__footer_title {}
-
-.main__footer_subtitle {}
-
-.main__footer_text {}
-
-.main__footer_btn {}
-
-.main__footer_contact {}
 
 .footer {
-	display: flex;
    height: 555px;
    background-color: #434343;
-
-
 }
 
 .footer__items {
+display: flex;	
+flex: 0 1 33.333%;
+justify-content: space-between;
+padding: 100px 110px;
+flex-wrap: wrap;
+}
+
+.footer__item {
+display: flex;	
+flex: 0 1 33.333%;
+flex-direction: column;
+font-family: Lato;
+font-size: 16px;
+line-height: 22px;
+color: #FFFFFF;
+margin: 0px -10px 38px 0px;
+padding: 0px 10px 0px 0px;
 
 }
 
-.footer__item {}
-
 .footer__nav {}
 
-.footer__footer {}
+.footer__footer {
+	border-top: 1px solid #666666;
+	font-family: Lato;
+	font-size: 16px;
+	line-height: 22px;
+	padding: 21px 0px 0px 0px;
+}
+.footer__footer ul{
+	display: flex;
+	flex: 0 1 33.333%;
+	color: #FFFFFF;
+	justify-content: space-between;
+}
+
+

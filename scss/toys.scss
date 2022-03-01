@@ -1,0 +1,118 @@
+@import "nullstyle.css";
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+
+
+
+.main {
+
+	&__forms {
+display: flex;
+background: rgba(125, 151, 218, 0.2);
+
+		&_title, legend {
+			font-family: Lato;
+			font-weight: bold;
+			font-size: 16px;
+			line-height: 22px;
+			color: #1E0606;
+		}
+	}
+
+	&__fieldset {
+	}
+
+	&__delivery {
+	}
+
+	&__amount {
+	}
+
+	&__header {
+
+		&_button {
+		}
+	}
+
+	&__toys {
+		display: flex;
+		flex-direction: column;
+
+		&_items {
+			display: flex;
+			flex-direction: column;
+		}
+
+		&_item {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			& img{
+				max-height: 100%;
+				max-width: 385px;
+				margin: 0px 0px 30px 0px;
+			}
+			& p{
+				margin: 0px 0px 20px 0px;
+				font-family: Lato;
+				font-size: 14px;
+				line-height: 19px;
+				text-align: center;
+				color: #1E0606;
+			}
+			& span{
+				font-family: Open Sans;
+			font-weight: 700;
+			font-size: 14px;
+			line-height: 19px;
+			text-align: center;
+			color: #1E0606;
+			}
+		}
+
+		&_bottom {
+		}
+	}
+}
+.title {
+}
+.page {
+
+	&__link {
+	}
+}
+
+.toys {
+
+	&__title {
+	}
+
+	&__subtitle {
+	}
+
+	&__bottom {
+		display: flex;
+
+		&_tick {
+		}
+
+		&_pages {
+		}
+	}
+}
+.footer {
+
+	&__items {
+	}
+
+	&__item {
+	}
+
+	&__nav {
+	}
+
+	&__footer {
+	}
+}
+.ftr {
+}

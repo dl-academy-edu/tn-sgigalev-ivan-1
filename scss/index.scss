@@ -1,0 +1,114 @@
+@import "nullstyle.css";
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+
+
+.main {
+   flex: 1 1 auto;
+	position: relative;
+}
+
+.main__header {
+   z-index: 0;
+   position: relative;
+   background: #EEE4DB;
+   height: 372px;
+   display: flex;
+   flex-direction: column;
+   padding: 89px 0px 0px 133px;
+}
+
+.main__header_img{
+	position: absolute;
+	right: -100px;
+	bottom: 0;
+	padding: 0px 100px 0px 0px;
+	margin: 0px 0px 0px 50px;
+}
+
+.main__header_title {
+   font-family: Montserrat;
+   font-weight: bold;
+   font-size: 40px;
+   line-height: 110%;
+   margin: 0px 0px 20px 0px;
+}
+
+.main__header_subtitle {
+   font-family: Crimson Text;
+   font-style: italic;
+   font-size: 20px;
+   line-height: 25px;
+   margin: 0px 0px 20px 0px;
+}
+
+.main__header_button {
+   display: flex;
+   flex: 1 1 auto;
+}
+
+.main__header_bottom {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 39px;
+   background-color: #C29974;
+   font-family: Lato;
+   font-weight: 500;
+   font-size: 12px;
+   line-height: 16px;
+   color: #FFFFFF;
+   text-transform: uppercase;
+   margin: 0px 0px 90px 0px;
+}
+
+.main__products {}
+
+.main__products_title {}
+
+.main__products_items ul {
+	display: flex;
+	justify-content: space-between;
+
+}
+
+.main__products_items ul li{
+	position: relative;
+	width: 270px;
+	height: 280px;
+}
+
+.main__products_item1:before {
+	content: "";
+	position: relative;
+   background-image: url('../images/products/product1.jpg');
+	background-size: 100px 100px;
+
+}
+
+.delivery_row{
+	display: flex;
+}
+
+.delivery{
+	margin: 0px 0px 90px 0px;
+}
+
+.labels{
+	display: flex;
+	justify-content: space-between;
+	margin: 0px 0px 90px 0px;
+	}
+
+
+	.main__bottom{
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.main__bottom_about, .main__bottom_contact{
+		background: #E1F0F7;
+		display: inline-block;
+
+	}

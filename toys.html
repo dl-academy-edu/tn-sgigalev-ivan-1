@@ -6,8 +6,8 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/catalog.css">
-	<title>Catalog</title>
+	<link rel="stylesheet" href="css/toys.css">
+	<title>Document</title>
 </head>
 
 <body>
@@ -42,39 +42,141 @@
 		</header>
 		<main class="main">
 			<div class="container">
-				<h1 class="main__title title"> Category Products </h1>
+				<h1 class="main__title title"> Toy for kids </h1>
 				<div class="main__nav">
 					<ul class="main__nav_page">
 						<li><a href="#" class="page__link">Home</a></li>
 						<li><a href="#" class="page__link">Catalog</a></li>
+						<li><a href="#" class="page__link">Toys</a></li>
 					</ul>
 				</div>
-				<div class="main__items">
-					<ul>
-						<li><a href="#" class="main__products_item1 item">APPAREL KIDS</a></li>
-						<li><a href="#" class="main__products_item2 item">HOLIDAY SHOP</a></li>
-						<li><a href="#" class="main__products_item3 item">TOYS</a></li>
-						<li><a href="#" class="main__products_item4 item">ACCESSORIES</a></li>
-						<li><a href="#" class="main__products_item5 item">TOYS</a></li>
-						<li><a href="#" class="main__products_item6 item">APPAREL ADULTS</a></li>
-					</ul>
-				</div>
-				<h2 class="main__footer title">Product Description</h2>
-				<div class="main__footer_text">
-					<p>Interactive doll Zapf Creation Baby Born Sister can drink from a bottle and almost really cry. You can
-						even
-						bathe her, just like a little sister.</p>
-					<p>A toy with a height of 43 cm bends its knees, the head rotates, it can stand upright. Such a doll will
-						be
-						an
-						excellent choice for a gift for a girl from 4 years old.</p>
-					<p>The set includes a miniature set of fashionable clothes, a hairbrush, a bottle for water, a pair of
-						hairpins
-						and elastic bands for hair, as well as two bracelets: one for the doll, the other for her young
-						mistress.
-					</p>
-				</div>
+				<section class="main__forms">
+					<div class="main__forms_row">
+						<form method="post" action="#">
+							<div>
+								<p class="main__forms_title">Cost</p>
+								<input type="range" min="0" max="100" step="1" value="50">
+							</div>
+
+							<div>
+								<fieldset class="main__fieldset">
+									<legend class="main__legend">Color</legend>
+									<ul>
+										<li>
+											<input type="checkbox" name="option1" id="color_black">
+											<label for="color_black">Black</label>
+										</li>
+										<li>
+											<input type="checkbox" name="option2" id="color_blue">
+											<label for="color_blue">Blue</label>
+										</li>
+										<li>
+											<input type="checkbox" name="option3" id="color_green">
+											<label for="color_green">Green</label>
+										</li>
+										<li>
+											<input type="checkbox" name="option4" id="color_white">
+											<label for="color_white">White</label>
+										</li>
+									</ul>
+								</fieldset>
+							</div>
+
+							<div>
+								<fieldset class="main__delivery">
+									<legend>Delivery</legend>
+									<ul>
+										<li>
+											<input type="radio" name="shipping" id="free_ship">
+											<label for="free_ship">Free Shipping</label>
+										</li>
+										<li>
+											<input type="radio" name="shipping" id="fast_ship">
+											<label for="fast_ship">Fast Shipping</label>
+										</li>
+									</ul>
+								</fieldset>
+							</div>
+
+							<div>
+								<fieldset class="main__amount">
+									<legend>Amount</legend>
+									<ul>
+										<li>
+											<input type="radio" name="amount" id="0-5">
+											<label for="0-5">0-5</label>
+										</li>
+										<li>
+											<input type="radio" name="amount" id="10-20">
+											<label for="10-20">10-20</label>
+										</li>
+										<li>
+											<input type="radio" name="amount" id="20-50">
+											<label for="20-50">20-50</label>
+										</li>
+									</ul>
+								</fieldset>
+							</div>
+						</form>
+					</div>
+					<a class="main__header_button btn">apply</a>
+				</section>
 			</div>
+
+			<section class="main__toys">
+				<div class="container">
+					<div class="main__toys_items">
+						<div class="main__toys_item">
+							<img src="images/toys/apron.png" alt="#">
+							<p class="toys__title">SHARKY BEAN BAG CHAIR COVER</p>
+							<span class="toys__subtitle">$60.00 USD</span>
+						</div>
+						<div class="main__toys_item">
+							<img src="images/toys/brass.png" alt="#">
+							<p class="toys__title">BRASS DECO FRAMES</p>
+							<span class="toys__subtitle">$66.00 USD</span>
+						</div>
+						<div class="main__toys_item">
+							<img src="images/toys/candle.png" alt="#">
+							<p class="toys__title">CIBO FULL APRON</p>
+							<span class="toys__subtitle">$60.00 USD</span>
+						</div>
+						<div class="main__toys_item">
+							<img src="images/toys/light.png" alt="#">
+							<p class="toys__title">GATCHA GATCHA GUMBALL MACHINE</p>
+							<span class="toys__subtitle">$56.00 USD</span>
+						</div>
+						<div class="main__toys_item">
+							<img src="images/toys/machine.png" alt="#">
+							<p class="toys__title">CHRISTMAS ADVENT SCENTED CANDLE</p>
+							<span class="toys__subtitle">$29.00 USD</span>
+						</div>
+						<div class="main__toys_item">
+							<img src="images/toys/shark.png" alt="#">
+							<p class="toys__title">TANGLE SPINNING TEA LIGHT</p>
+							<span class="toys__subtitle">$56.00 USD</span>
+						</div>
+						<div class="main__toys_bottom">
+							<a href="#" class="toys__bottom_tick">
+								<svg width="18" height="30" viewBox="0 0 18 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M16 2L3 15L16 28" stroke="#1E0606" stroke-opacity="0.12" stroke-width="4" />
+								</svg>
+							</a>
+							<ul class="toys__bottom_pages">
+								<li>1</li>
+								<li>2</li>
+								<li>3</li>
+								<li>4</li>
+							</ul>
+							<a href="#" class="toys__bottom_tick">
+								<svg width="18" height="30" viewBox="0 0 18 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M2 2L15 15L2 28" stroke="#1E0606" stroke-opacity="0.12" stroke-width="4" />
+								</svg>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
 		</main>
 		<footer class="footer">
 			<div class="container">
@@ -174,7 +276,6 @@
 				</div>
 			</div>
 		</footer>
-	</div>
 	</div>
 </body>
 
