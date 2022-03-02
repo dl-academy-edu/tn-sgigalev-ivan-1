@@ -2,6 +2,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 
+@font-face {
+	font-family: 'CrimsonText';
+	src: url('../fonts/CrimsonText-Italic.eot');
+	src: local('☺'), url('../fonts/CrimsonText-Italic.woff') format('woff'), url('../fonts/CrimsonText-Italic.ttf') format('truetype'), url('../fonts/CrimsonText-Italic.svg') format('svg');
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'CrimsonTextBoldItalic';
+	src: url('../fonts/CrimsonText-BoldItalic.eot');
+	src: local('☺'), url('../fonts/CrimsonText-BoldItalic.woff') format('woff'), url('../fonts/CrimsonText-BoldItalic.ttf') format('truetype'), url('../fonts/CrimsonText-BoldItalic.svg') format('svg');
+	font-weight: 700;
+	font-style: normal;
+}
+
 //Оболочка
 
 .wrapper {
@@ -56,7 +71,7 @@
 // Ссылки
 
 .page__link{
-font-family: Crimson Text;
+font-family: CrimsonText;
 font-style: italic;
 font-size: 20px;
 line-height: 25px;
@@ -97,7 +112,7 @@ border-bottom: 1px solid #666666;
 
 .container {
    padding: 50px 100px 110px 100px;
-   max-width: 1180px;
+   max-width: 1380px;
    margin: 0 auto;
 	
 }
@@ -108,7 +123,7 @@ border-bottom: 1px solid #666666;
    text-transform: uppercase;
    font-size: 14px;
    line-height: 19px;
-	margin: 0px 0px 40px 0px;
+	margin: 0px 0px 0px 0px;
    align-items: center;
 }
 
