@@ -44,20 +44,35 @@ body{
 
 /* Products */
 
+.products__row ul{
+	justify-content: space-between;
+	display: flex;
+	flex-wrap: wrap;
+}
+
 .product__item{
-		position: relative;
-		max-width: 280px;
-	}
+	position: relative;
+	min-height: 280px;
+}
+
+.product__item img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	position: relative;
+	max-width: 280px;
+	max-height: 270px;
+}
 
 	.title__product{
-		max-width: 192px;
+		position: absolute;
+		z-index: 2;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		text-align: center;
 	}
 
-	.product__item_title{
-		position: absolute;
-		left: 50%;
-		top: 50%;
-	}
 
 /* Buttins and etc. */
 
@@ -340,3 +355,4 @@ padding: 9px 0px 9px 22px;
 	margin: 20px 0px 25px 0px;
 	display: flex;
 }
+
