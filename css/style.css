@@ -19,8 +19,56 @@
   font-style: normal;
 }
 
+/* Hover, Active & etc. */
+.blog__bottom_pages button:hover,
+.toys__bottom_pages button:hover{
+	color: #AAAAAA;
+}
+
+.btn:hover{
+	background: #C29974;
+}
+
+.btn:active{
+	background: #CFAF91;
+}
+
+.header__row a:hover{
+	color: #8F8383
+}
+
+.header__row a:active{
+	color: #D2CDCD;
+}
 
 
+
+/* Main Slider */
+
+.main__slider span{
+	display: inline-block;
+	width: 31px;
+	height: 3px;
+	background-color: #1E060699;
+	margin: 0px 0px 11px 0px;
+}
+
+.main__slider{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.main__slider span:nth-child(n+3){
+	background: #D6CAC2;
+}
+
+.main__slider span:nth-child(n+3):hover{
+	background: #725F5B;
+}
+
+
+/* General */
 	
 body{
 	min-height: 100%;
@@ -39,7 +87,6 @@ body{
 	margin: 0 auto;
 	padding: 0px 15px;
 }
-
 
 
 /* Products */
@@ -356,3 +403,72 @@ padding: 9px 0px 9px 22px;
 	display: flex;
 }
 
+/* Псевдоклассы Form*/
+
+.form__checkbox{
+	margin: 0px 0px 17px 0px;
+}
+
+.form__input:hover{
+	border: 1px solid #C29974;
+}
+
+.form__input:active{
+	border: 1px solid #C29974;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+   display: none;
+}
+.checkbox{
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+}
+
+.checkbox__input + .checkbox__label,
+.radio__input + .radio__label {
+	display: inline-flex;
+	align-items: center;
+}
+
+.checkbox__input + .checkbox__label::before,
+.radio__input + .radio__label::before{
+	content: '';
+	display: inline-block;
+	width: 19px;
+	height: 19px;
+	border: 1px solid #adb5bd;
+	margin-right: 16px;
+	background-repeat: no-repeat;
+	background-position: top right;
+	background-size: 90%;
+	border: 2px solid #C29974;
+	border-radius: 3px;
+}
+
+.input__toys + .checkbox__label::before,
+.radio__toys + .radio__label::before
+ {
+	margin-right: 10px;
+}
+
+
+.checkbox__input:checked + .checkbox__label::before,
+.radio__input:checked + .radio__label::before{
+	background-image: url('../img/icons/checkbox_tick.svg');
+}
+
+.radio__input + .radio__label::before{
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-position: center;
+}
+
+.radio__input:checked + .radio__label::before{
+	background-image: url('../img/icons/Ellipse.svg');
+	padding: 4px;
+	
+}

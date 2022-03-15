@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Main</title>
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/index-min.css">
 </head>
 
 <body>
@@ -330,17 +330,17 @@
 
 				<div class="form-text">
 					<label class="label" for="name">Name
-						<input type="text" id="name" name="name">
+						<input type="text" id="name" name="name" class="form__input">
 					</label>
 				</div>
 
 				<div class="form-tel-email">
 					<label for="input__tel">Phone
-						<input type="tel" id="input__tel">
+						<input type="tel" id="input__tel" class="form__input">
 					</label>
 
 					<label for="input__email">Email
-						<input type="email" id="input__email">
+						<input type="email" id="input__email" class="form__input">
 					</label>
 				</div>
 
@@ -349,9 +349,10 @@
 					<textarea id="input__textarea"></textarea>
 				</div>
 
-				<div>
-					<input type="checkbox" name="yes" id="input__agreement">
-					<label for="input__agreement">By clicking on the button, you consent to the processing of
+				<div class="form__checkbox">
+					<input type="checkbox" name="yes" id="input__agreement" class="checkbox__input">
+					<label for="input__agreement" class="checkbox__label">By clicking on the button, you consent to the
+						processing of
 						your
 						personal
 						data</label>

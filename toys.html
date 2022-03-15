@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Toys</title>
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/toys.css">
+	<link rel="stylesheet" href="css/toys-min.css">
 </head>
 
 <body>
@@ -56,75 +56,80 @@
 		</div>
 		<section class="main__forms">
 			<div class="main__forms_row">
-				<form method="post" action="#" class="main__form container">
-					<div>
-						<p class="main__legend">Cost</p>
-						<input type="range" min="0" max="100" step="1" value="50">
-					</div>
+				<div class="container">
+					<form method="post" action="#" class="main__form">
+						<div>
+							<p class="main__legend">Cost</p>
+							<input type="range" min="0" max="100" step="1" value="50">
+						</div>
 
-					<div>
-						<fieldset class="fieldset__color">
-							<legend class="main__legend">Color</legend>
-							<ul>
-								<li>
-									<input type="checkbox" name="option1" id="color_black">
-									<label for="color_black">Black</label>
-								</li>
-								<li>
-									<input type="checkbox" name="option2" id="color_blue">
-									<label for="color_blue">Blue</label>
-								</li>
-								<li>
-									<input type="checkbox" name="option3" id="color_green">
-									<label for="color_green">Green</label>
-								</li>
-								<li>
-									<input type="checkbox" name="option4" id="color_white">
-									<label for="color_white">White</label>
-								</li>
-							</ul>
-						</fieldset>
-					</div>
+						<div>
+							<fieldset class="fieldset__color">
+								<legend class="main__legend">Color</legend>
+								<ul>
+									<li>
+										<input type="checkbox" name="option1" id="color_black"
+											class="checkbox__input input__toys">
+										<label for="color_black" class="checkbox__label">Black</label>
+									</li>
+									<li>
+										<input type="checkbox" name="option2" id="color_blue" class="checkbox__input input__toys">
+										<label for="color_blue" class="checkbox__label">Blue</label>
+									</li>
+									<li>
+										<input type="checkbox" name="option3" id="color_green"
+											class="checkbox__input input__toys">
+										<label for="color_green" class="checkbox__label">Green</label>
+									</li>
+									<li>
+										<input type="checkbox" name="option4" id="color_white"
+											class="checkbox__input input__toys">
+										<label for="color_white" class="checkbox__label">White</label>
+									</li>
+								</ul>
+							</fieldset>
+						</div>
 
-					<div>
-						<fieldset class="fieldset__delivery">
-							<legend class="main__legend">Delivery</legend>
-							<ul>
-								<li>
-									<input type="radio" name="shipping" id="free_ship">
-									<label for="free_ship">Free Shipping</label>
-								</li>
-								<li>
-									<input type="radio" name="shipping" id="fast_ship">
-									<label for="fast_ship">Fast Shipping</label>
-								</li>
-							</ul>
-						</fieldset>
-					</div>
+						<div>
+							<fieldset class="fieldset__delivery">
+								<legend class="main__legend">Delivery</legend>
+								<ul>
+									<li>
+										<input type="radio" name="shipping" id="free_ship" class="radio__input">
+										<label for="free_ship" class="radio__label">Free Shipping</label>
+									</li>
+									<li>
+										<input type="radio" name="shipping" id="fast_ship" class="radio__input">
+										<label for="fast_ship" class="radio__label">Fast Shipping</label>
+									</li>
+								</ul>
+							</fieldset>
+						</div>
 
-					<div>
-						<fieldset class="fieldset__amount">
-							<legend class="main__legend">Amount</legend>
-							<ul>
-								<li>
-									<input type="radio" name="amount" id="0-5">
-									<label for="0-5">0-5</label>
-								</li>
-								<li>
-									<input type="radio" name="amount" id="10-20">
-									<label for="10-20">10-20</label>
-								</li>
-								<li>
-									<input type="radio" name="amount" id="20-50">
-									<label for="20-50">20-50</label>
-								</li>
-							</ul>
-						</fieldset>
-					</div>
-					<div class="main__header_button">
-						<button type="submit" class="btn">apply</button>
-					</div>
-				</form>
+						<div>
+							<fieldset class="fieldset__amount">
+								<legend class="main__legend">Amount</legend>
+								<ul>
+									<li>
+										<input type="radio" name="amount" id="0-5">
+										<label for="0-5">0-5</label>
+									</li>
+									<li>
+										<input type="radio" name="amount" id="10-20">
+										<label for="10-20">10-20</label>
+									</li>
+									<li>
+										<input type="radio" name="amount" id="20-50">
+										<label for="20-50">20-50</label>
+									</li>
+								</ul>
+							</fieldset>
+						</div>
+						<div class="main__header_button">
+							<button type="submit" class="btn">apply</button>
+						</div>
+					</form>
+				</div>
 			</div>
 		</section>
 
