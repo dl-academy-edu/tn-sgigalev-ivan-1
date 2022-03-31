@@ -7,15 +7,15 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Main</title>
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/index-min.css">
+	<link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
 	<header class="header">
 		<div class="container">
 			<div class="header__row">
-				<a href="#" class="header__logo"><svg width="102" height="52" viewBox="0 0 102 52" fill="none"
-						xmlns="http://www.w3.org/2000/svg">
+				<a href="index.html" class="header__logo" tabindex="1"><svg width="102" height="52" viewBox="0 0 102 52"
+						fill="none" xmlns="http://www.w3.org/2000/svg">
 						<path fill-rule="evenodd" clip-rule="evenodd"
 							d="M0.997559 0H19.1259C32.1442 0 41.4377 12.3713 41.4377 24.0356V27.7332C41.4377 39.3974 32.1442 51.7689 19.1259 51.7689H0.997559V0ZM38.6487 24.0356C38.6487 13.5132 30.2391 2.77333 19.1259 2.77333H3.78653V48.9956H19.1259C30.2391 48.9956 38.6487 38.2557 38.6487 27.7333V24.0356Z"
 							fill="#1E0606" />
@@ -25,13 +25,13 @@
 							fill="#1E0606" />
 					</svg>
 				</a>
-				<div class="header__nav">
-					<ul>
-						<li><a href="">Blog</a></li>
-						<li><a href="">Catalog</a></li>
-						<li><a href="">About US</a></li>
-					</ul>
-				</div>
+
+				<ul class="header__nav">
+					<li><a href="blog.html">Blog</a></li>
+					<li><a href="catalog.html">Catalog</a></li>
+					<li><a href="contact.html">About US</a></li>
+				</ul>
+
 				<button class="button_nav"><svg width="18" height="18" viewBox="0 0 18 18" fill="none"
 						xmlns="http://www.w3.org/2000/svg">
 						<path
@@ -39,28 +39,23 @@
 							fill="#1E0606" />
 					</svg>
 				</button>
-				<a href="#" class="footer__contact">Contact US</a>
+				<button class="footer__contact popup-link">Contact&nbsp&nbspUS</button>
 			</div>
 		</div>
 	</header>
 	<main class="main">
 		<div class="container">
 			<section class="main__top">
-				<section class="main__row">
-					<div class="main__slider">
-						<svg class="slider__number" width="50" height="44" viewBox="0 0 50 44" fill="none"
-							xmlns="http://www.w3.org/2000/svg">
-							<path
-								d="M16.62 43.24C13.46 43.24 10.64 42.38 8.16 40.66C5.72 38.9 3.82 36.42 2.46 33.22C1.1 29.98 0.42 26.24 0.42 22C0.42 17.76 1.1 14.04 2.46 10.84C3.82 7.6 5.72 5.12 8.16 3.4C10.64 1.64 13.46 0.759997 16.62 0.759997C19.82 0.759997 22.64 1.64 25.08 3.4C27.52 5.12 29.42 7.6 30.78 10.84C32.14 14.04 32.82 17.76 32.82 22C32.82 26.24 32.14 29.98 30.78 33.22C29.42 36.42 27.52 38.9 25.08 40.66C22.64 42.38 19.82 43.24 16.62 43.24ZM16.62 41.38C19.42 41.38 21.9 40.6 24.06 39.04C26.22 37.48 27.88 35.24 29.04 32.32C30.24 29.4 30.84 25.96 30.84 22C30.84 18.04 30.24 14.6 29.04 11.68C27.88 8.76 26.22 6.52 24.06 4.96C21.9 3.4 19.42 2.62 16.62 2.62C13.82 2.62 11.34 3.4 9.18 4.96C7.06 6.52 5.4 8.76 4.2 11.68C3.04 14.6 2.46 18.04 2.46 22C2.46 25.96 3.04 29.4 4.2 32.32C5.4 35.24 7.06 37.48 9.18 39.04C11.34 40.6 13.82 41.38 16.62 41.38ZM49.3978 0.999997V43H47.4178V2.86H36.8578V0.999997H49.3978Z"
-								fill="#1E0606" fill-opacity="0.05" />
-						</svg>
-						<span></span>
-						<span></span>
-						<span></span>
-						<span></span>
-					</div>
-					<div class="main__text">
-						<ul>
+				<div class="main__column">
+					<div class="main__row_top">
+						<div class="main__slider">
+							<p class="slider__number">01</p>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+						<ul class="main__text">
 							<li>
 								<h1 class="main__title">THE OOH NOO COLLECTION</h1>
 							</li>
@@ -70,43 +65,41 @@
 							<li><a href="#" class="main__button btn">EXPLORE NOW</a></li>
 						</ul>
 					</div>
-					<img src="img/main/monster.png" alt="#" class="main__row_img">
-				</section>
-				<p class="main__shipping">Free (continental) USA shipping on all orders of $100 USD or more!</p>
+					<div class="main__row_bottom">
+						<p class="main__shipping">Free (continental) USA shipping on all orders of $100 USD or more!</p>
+					</div>
 			</section>
 			<section class="main__products">
 				<h1 class="main__products_title title">Category Products</h1>
 				<div class="products__row">
 					<ul>
 						<li>
-							<div class="product__item">
+							<div class="product__item img-shirt">
 								<a href="#">
 									<p class="title__product">APPAREL KIDS</p>
-									<img src="../README.md/img/main/shirt.jpg" alt="">
 								</a>
 							</div>
 						</li>
 						<li>
 							<a href="#">
-								<div class="product__item">
+								<div class="product__item img-socks">
 									<p class="title__product">HOLIDAY SHOP</p>
-									<img src="../README.md/img/main/socks.jpg" alt="">
 								</div>
 							</a>
 						</li>
 						<li>
 							<a href="#">
-								<div class="product__item">
+								<div class="product__item img-deer">
 									<p class="title__product">TOYS</p>
-									<img src="../README.md/img/main/deer.jpg" alt="">
+
 								</div>
 							</a>
 						</li>
 						<li>
 							<a href="#">
-								<div class="product__item">
-									<p class="title__product">ACCESSORIESS</p>
-									<img src="../README.md/img/main/monkey.jpg" alt="">
+								<div class="product__item img-monkey">
+									<p class="title__product">ACCESSORIES</p>
+
 								</div>
 							</a>
 						</li>
@@ -132,73 +125,91 @@
 			</section>
 			<section class="main__delivery">
 				<div class="main__delivery_row">
+
 					<img src="../README.md/img/main/woman.jpg" alt="" class="main__delivery_img">
+
 					<div class="main__delivery_column">
-						<h2 class="delivery_column_title title">Delivery</h2>
-						<h3 class="delivery_column_subtitle subtitle title_bg_blue">Delivery</h3>
-						<h3 class="delivery_column_subtitle subtitle ">Guarantee</h3>
-						<h3 class="delivery_column_subtitle subtitle title_bg_blue_credit">Credit</h3>
-						<div class="delivery_column_text">
-							<p class="column_text_p text">Some days i feel like i've been working on dlk my entire life and
-								there are other days that
-								i am completely shocked that four years have flown by. It's simply magical.</p>
-							<p class="column_text_p text">What started as an outlet to deal with the traumatic loss of my
-								husband, dlk has now become
-								a truly happy place for me and i have you and all of the beautiful designers that we work with
-								to thank!</p>
+
+						<ul class="delivery__titles">
+							<li>
+								<button type="button" class="delivery__title title">Delivery</button>
+							</li>
+
+							<li>
+								<button type="button" class="delivery__title hover__title">Delivery</button>
+							</li>
+
+							<li>
+								<button type="button" class="delivery__title hover__title">Guarantee</button>
+							</li>
+							<li>
+
+								<button type="button" class="delivery__title hover__title">Credit</button>
+							</li>
+						</ul>
+
+						<div class="delivery__text">
+							<p class="text">Some days i feel like i've been working on dlk my entire life and there are other
+								days that i am completely shocked that four years have flown by. It's simply magical.</p>
+							<p class="text">What started as an outlet to deal with the traumatic loss of my husband, dlk has
+								now become a truly happy place for me and i have you and all of the beautiful designers that we
+								work with to thank!</p>
 						</div>
-						<a href="#" class="delivery_column_button btn">LEARN MORE</a>
+						<a href="#" class="delivery__btn btn">LEARN MORE</a>
 					</div>
 				</div>
 			</section>
-			<section class="labels">
-				<div class="container">
-					<ul>
-						<li>
-							<a href="#">
-								<img src="../README.md/img/main/mailru.svg" alt="#">
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<img src="../README.md/img/main/apple.svg" alt="#">
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<img src="../README.md/img/main/eltex.svg" alt="#">
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<img src="../README.md/img/main/owox.svg" alt="#">
-						</li>
-					</ul>
-				</div>
-			</section>
-			<section class="main__bottom">
-				<div class="container">
-					<div class="bottom__row">
-						<div class="about__column">
-							<h3 class="about__column_title title">Design Life Kids</h3>
-							<h3 class="about__column_subtitle subtitle">About Us</h3>
-							<p class=" about__column_text text">Some days i feel like i've been working on dlk my entire life
-								and
-								there are other days that i am completely shocked that four years have flown by. It's simply
-								magical.</p>
-							<a href="#" class="about__column_button btn">buy now</a>
-						</div>
-						<div class="about__column">
-							<h3 class="about__column_title title">Contacts</h3>
-							<p class="about__column_text text">Some days i feel like i've been working on dlk my entire life
-								and
-								there are other days that i am completely shocked that four years have flown by. It's simply
-								magical.</p>
-							<img src="../README.md/img/main/map.jpg" alt="">
-						</div>
-					</div>
-				</div>
-			</section>
+
+			<ul class="labels">
+
+				<li>
+					<a href="#">
+						<img src="../README.md/img/main/mail.png" alt="#">
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img src="../README.md/img/main/apple.png" alt="#">
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img src="../README.md/img/main/eltex.png" alt="#">
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img src="../README.md/img/main/owox.png" alt="#">
+				</li>
+
+			</ul>
+
+			<ul class="main__bottom">
+
+				<li class="about__column">
+					<h3 class="about__column_title title">Design Life Kids</h3>
+					<h3 class="about__column_subtitle subtitle">About Us</h3>
+					<p class=" about__column_text text">Some days i feel like i've been working on dlk my entire life
+						and
+						there are other days that i am completely shocked that four years have flown by. It's simply
+						magical.</p>
+					<a href="#" class="about__column_button btn">buy now</a>
+				</li>
+
+				<li class="about__column">
+					<h3 class="about__column_title title">Contacts</h3>
+					<p class="about__column_text text">Some days i feel like i've been working on dlk my entire life
+						and
+						there are other days that i am completely shocked that four years have flown by. It's simply
+						magical.</p>
+					<img src="../README.md/img/main/map.jpg" alt="">
+				</li>
+
+
+			</ul>
 		</div>
 	</main>
 	<footer class="footer">
@@ -210,12 +221,12 @@
 							<h2 class="footer__column_title ftr__title">Navigation</h2>
 							<div class="footer__column_item">
 								<ul class=" footer__column_ul">
-									<li class=" footer__column_li">About Us</li>
-									<li class=" footer__column_li">Blog</li>
-									<li class=" footer__column_li">Design Services</li>
-									<li class=" footer__column_li">Featured On</li>
-									<li class=" footer__column_li">2018 Holiday Catalog</li>
-									<li class=" footer__column_li">Shop By Designer</li>
+									<li class=" footer__column_li"><a href="#" class="text__wht">About Us</a></li>
+									<li class=" footer__column_li"><a href="#" class="text__wht">Blog</a></li>
+									<li class=" footer__column_li"><a href="#" class="text__wht">Design Services</a></li>
+									<li class=" footer__column_li"><a href="#" class="text__wht">Featured On</a></li>
+									<li class=" footer__column_li"><a href="#" class="text__wht">2018 Holiday Catalog</a></li>
+									<li class=" footer__column_li"><a href="#" class="text__wht">Shop By Designer</a></li>
 								</ul>
 							</div>
 						</div>
@@ -223,12 +234,12 @@
 							<h2 class="footer__column_title ftr__title">Customer Information</h2>
 							<div class="footer__column_item">
 								<ul class=" footer__column_ul">
-									<li class=" footer__column_li">Contact Us</li>
-									<li class=" footer__column_li">Sale Exclusions</li>
-									<li class=" footer__column_li">Shipping & Returns</li>
-									<li class=" footer__column_li">Terms & Conditions</li>
-									<li class=" footer__column_li">Privacy Policy</li>
-									<li class=" footer__column_li">Search</li>
+									<li class=" footer__column_li"><a href="#" class="text__wht">Contact Us</a></li>
+									<li class=" footer__column_li"><a href="#" class="text__wht">Sale Exclusions</a></li>
+									<li class=" footer__column_li"><a href="#" class="text__wht">Shipping & Returns</a></li>
+									<li class=" footer__column_li"><a href="#" class="text__wht">Terms & Conditions</a></li>
+									<li class=" footer__column_li"><a href="#" class="text__wht">Privacy Policy</a></li>
+									<li class=" footer__column_li"><a href="#" class="text__wht">Search</a></li>
 								</ul>
 							</div>
 						</div>
@@ -236,7 +247,7 @@
 							<h2 class="footer__column_title ftr__title">Connect</h2>
 							<div class="footer__column_item">
 								<form method=POST action="mailto:directlineacademy.ru" enctype="text/plain">
-									<input name="Email" type="email" value="" placeholder="Email">
+									<input name="Email" type="email" value="" placeholder="Email" class="item__input">
 									<button name="Join" type="submit" value="Join" class="btn">Join</button>
 								</form>
 							</div>
@@ -289,31 +300,23 @@
 				</section>
 				<section class="footer__row_bottom">
 					<ul>
-						<li>
-							<div class="rating">
-								<p class="text text_white">Company Rating</p>
-								<svg class="footer__stars" width="98" height="17" viewBox="0 0 98 17" fill="none"
-									xmlns="http://www.w3.org/2000/svg">
-									<path
-										d="M7.60845 2.92705C7.9078 2.00574 9.21121 2.00574 9.51056 2.92705L10.5801 6.21885H14.0413C15.0101 6.21885 15.4128 7.45846 14.6291 8.02786L11.8289 10.0623L12.8985 13.3541C13.1979 14.2754 12.1434 15.0415 11.3597 14.4721L8.55951 12.4377L5.75934 14.4721C4.97563 15.0415 3.92115 14.2754 4.2205 13.3541L5.29007 10.0623L2.4899 8.02787C1.70619 7.45846 2.10896 6.21885 3.07768 6.21885H6.53888L7.60845 2.92705Z"
-										fill="white" />
-									<path
-										d="M27.6085 2.92705C27.9078 2.00574 29.2112 2.00574 29.5106 2.92705L30.5801 6.21885H34.0413C35.0101 6.21885 35.4128 7.45846 34.6291 8.02786L31.8289 10.0623L32.8985 13.3541C33.1979 14.2754 32.1434 15.0415 31.3597 14.4721L28.5595 12.4377L25.7593 14.4721C24.9756 15.0415 23.9211 14.2754 24.2205 13.3541L25.2901 10.0623L22.4899 8.02787C21.7062 7.45846 22.109 6.21885 23.0777 6.21885H26.5389L27.6085 2.92705Z"
-										fill="white" />
-									<path
-										d="M47.6085 2.92705C47.9078 2.00574 49.2112 2.00574 49.5106 2.92705L50.5801 6.21885H54.0413C55.0101 6.21885 55.4128 7.45846 54.6291 8.02786L51.8289 10.0623L52.8985 13.3541C53.1979 14.2754 52.1434 15.0415 51.3597 14.4721L48.5595 12.4377L45.7593 14.4721C44.9756 15.0415 43.9211 14.2754 44.2205 13.3541L45.2901 10.0623L42.4899 8.02787C41.7062 7.45846 42.109 6.21885 43.0777 6.21885H46.5389L47.6085 2.92705Z"
-										fill="white" />
-									<path
-										d="M67.6085 2.92705C67.9078 2.00574 69.2112 2.00574 69.5106 2.92705L70.5801 6.21885H74.0413C75.0101 6.21885 75.4128 7.45846 74.6291 8.02786L71.8289 10.0623L72.8985 13.3541C73.1979 14.2754 72.1434 15.0415 71.3597 14.4721L68.5595 12.4377L65.7593 14.4721C64.9756 15.0415 63.9211 14.2754 64.2205 13.3541L65.2901 10.0623L62.4899 8.02787C61.7062 7.45846 62.109 6.21885 63.0777 6.21885H66.5389L67.6085 2.92705Z"
-										fill="white" />
-									<path
-										d="M87.6085 2.92705C87.9078 2.00574 89.2112 2.00574 89.5106 2.92705L90.5801 6.21885H94.0413C95.0101 6.21885 95.4128 7.45846 94.6291 8.02786L91.8289 10.0623L92.8985 13.3541C93.1979 14.2754 92.1434 15.0415 91.3597 14.4721L88.5595 12.4377L85.7593 14.4721C84.9756 15.0415 83.9211 14.2754 84.2205 13.3541L85.2901 10.0623L82.4899 8.02787C81.7062 7.45846 82.109 6.21885 83.0777 6.21885H86.5389L87.6085 2.92705Z"
-										fill="white" />
-								</svg>
+						<li class="rating">
+							<span class=" text text__wht">Company Rating</span>
+							<div class="rating__area">
+								<input type="radio" id="star-5" name="rating" value="5">
+								<label for="star-5" title="Оценка «5»"></label>
+								<input type="radio" id="star-4" name="rating" value="4">
+								<label for="star-4" title="Оценка «4»"></label>
+								<input type="radio" id="star-3" name="rating" value="3">
+								<label for="star-3" title="Оценка «3»"></label>
+								<input type="radio" id="star-2" name="rating" value="2">
+								<label for="star-2" title="Оценка «2»"></label>
+								<input type="radio" id="star-1" name="rating" value="1">
+								<label for="star-1" title="Оценка «1»"></label>
 							</div>
 						</li>
 						<li>
-							<p class="text text_white">Copyright © 2018 Dlk • Design Life Kids</p>
+							<span class="text text__wht">Copyright © 2018 Dlk • Design Life Kids</span>
 						</li>
 						<li>
 							<a class="text link_footer">Web Design — Direct Line Development</a>
@@ -324,44 +327,48 @@
 		</div>
 	</footer>
 
-	<div class="container">
-		<div class="main__form">
-			<form action="#" method="post" class="modal">
+	<section class="popup" id=" popup">
+		<div class="container">
+			<div class="main__form">
+				<form action="#" method="post" class="modal">
 
-				<div class="form-text">
-					<label class="label" for="name">Name
-						<input type="text" id="name" name="name" class="form__input">
-					</label>
-				</div>
+					<div class="form-text">
+						<label class="label" for="name">Name
+							<input type="text" id="name" name="name" class="form__input">
+						</label>
+					</div>
 
-				<div class="form-tel-email">
-					<label for="input__tel">Phone
-						<input type="tel" id="input__tel" class="form__input">
-					</label>
+					<div class="form-tel-email">
+						<label for="input__tel">Phone
+							<input type="tel" id="input__tel" class="form__input">
+						</label>
 
-					<label for="input__email">Email
-						<input type="email" id="input__email" class="form__input">
-					</label>
-				</div>
+						<label for="input__email">Email
+							<input type="email" id="input__email" class="form__input">
+						</label>
+					</div>
 
-				<div>
-					<p><label for="input__textarea">Message</label></p>
-					<textarea id="input__textarea"></textarea>
-				</div>
+					<div>
+						<p><label for="input__textarea">Message</label></p>
+						<textarea id="input__textarea" class="input__textarea"></textarea>
+					</div>
 
-				<div class="form__checkbox">
-					<input type="checkbox" name="yes" id="input__agreement" class="checkbox__input">
-					<label for="input__agreement" class="checkbox__label">By clicking on the button, you consent to the
-						processing of
-						your
-						personal
-						data</label>
-				</div>
-				<button type="submit" class="btn">SUBMIT</button>
-			</form>
+					<div class="form__checkbox">
+						<input type="checkbox" name="yes" id="input__agreement" class="checkbox__input">
+						<label for="input__agreement" class="checkbox__label">By clicking on the button, you consent to the
+							processing of
+							your
+							personal
+							data</label>
+					</div>
+					<button type="submit" class="btn">SUBMIT</button>
+				</form>
+				<a href="#" class="popup__cross"><img src="../README.md/img/icons/cross.svg" alt="#"></a>
+			</div>
+
 		</div>
-	</div>
-
+	</section>
+	<script src="js/popup.js"></script>
 </body>
 
 </html>

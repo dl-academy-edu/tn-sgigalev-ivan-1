@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Toys</title>
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/toys-min.css">
+	<link rel="stylesheet" href="css/toys.css">
 </head>
 
 <body>
@@ -25,13 +25,11 @@
 							fill="#1E0606" />
 					</svg>
 				</a>
-				<div class="header__nav">
-					<ul>
-						<li><a href="">Blog</a></li>
-						<li><a href="">Catalog</a></li>
-						<li><a href="">About US</a></li>
-					</ul>
-				</div>
+				<ul class="header__nav">
+					<li><a href="blog.html">Blog</a></li>
+					<li><a href="catalog.html">Catalog</a></li>
+					<li><a href="contact.html">About US</a></li>
+				</ul>
 				<button class="button_nav"><svg width="18" height="18" viewBox="0 0 18 18" fill="none"
 						xmlns="http://www.w3.org/2000/svg">
 						<path
@@ -46,13 +44,19 @@
 	<main class="main">
 		<div class="container">
 			<h1 class="main__title title title__other"> Toy for kids </h1>
-			<section class="main__nav">
-				<ul class="main__nav_page">
-					<li><a href="#" class="page__link">Home</a></li>
-					<li><a href="#" class="page__link">Catalog</a></li>
-					<li><a href="#" class="page__link">Toys</a></li>
-				</ul>
-			</section>
+
+			<ul class="main__nav_page">
+				<li>
+					<p href="#" class="page__link">Home</p>
+				</li>
+				<li>
+					<p href="#" class="page__link">Catalog</p>
+				</li>
+				<li>
+					<p href="#" class="page__link">Toys</p>
+				</li>
+			</ul>
+
 		</div>
 		<section class="main__forms">
 			<div class="main__forms_row">
@@ -60,13 +64,13 @@
 					<form method="post" action="#" class="main__form">
 						<div>
 							<p class="main__legend">Cost</p>
-							<input type="range" min="0" max="100" step="1" value="50">
+							<input type="range" min="0" max="100" step="1" value="50" name="range" class="range">
 						</div>
 
 						<div>
 							<fieldset class="fieldset__color">
 								<legend class="main__legend">Color</legend>
-								<ul>
+								<ul class="fieldset__color_li">
 									<li>
 										<input type="checkbox" name="option1" id="color_black"
 											class="checkbox__input input__toys">
@@ -93,7 +97,7 @@
 						<div>
 							<fieldset class="fieldset__delivery">
 								<legend class="main__legend">Delivery</legend>
-								<ul>
+								<ul class="fieldset__delivery_list">
 									<li>
 										<input type="radio" name="shipping" id="free_ship" class="radio__input">
 										<label for="free_ship" class="radio__label">Free Shipping</label>
@@ -109,18 +113,18 @@
 						<div>
 							<fieldset class="fieldset__amount">
 								<legend class="main__legend">Amount</legend>
-								<ul>
+								<ul class="fieldset__amount_list">
 									<li>
-										<input type="radio" name="amount" id="0-5">
-										<label for="0-5">0-5</label>
+										<input type="radio" name="amount" id="0-5" class="input__amount">
+										<label for="0-5" class="label__amount">0-5</label>
 									</li>
 									<li>
-										<input type="radio" name="amount" id="10-20">
-										<label for="10-20">10-20</label>
+										<input type="radio" name="amount" id="10-20" class="input__amount">
+										<label for="10-20" class="label__amount">10-20</label>
 									</li>
 									<li>
-										<input type="radio" name="amount" id="20-50">
-										<label for="20-50">20-50</label>
+										<input type="radio" name="amount" id="20-50" class="input__amount">
+										<label for="20-50" class="label__amount">20-50</label>
 									</li>
 								</ul>
 							</fieldset>
@@ -139,32 +143,38 @@
 					<div class="main__toys_item">
 						<img src="../README.md/img/toys/shark.png" alt="#">
 						<p class="toys__title">SHARKY BEAN BAG CHAIR COVER</p>
-						<span class="toys__title bold">$60.00 USD</span>
+						<span class="toys__subtitle">$60.00 USD</span>
+						<a href="#" class="toys__item_hover">LEARN MORE</a>
 					</div>
 					<div class="main__toys_item">
 						<img src="../README.md/img/toys/brass.png" alt="#">
 						<p class="toys__title">BRASS DECO FRAMES</p>
-						<span class="toys__title bold">$66.00 USD</span>
+						<span class="toys__subtitle">$66.00 USD</span>
+						<a href="#" class="toys__item_hover">LEARN MORE</a>
 					</div>
 					<div class="main__toys_item">
 						<img src="../README.md/img/toys/apron.png" alt="#">
 						<p class="toys__title">CIBO FULL APRON</p>
-						<span class="toys__title bold">$60.00 USD</span>
+						<span class="toys__subtitle">$60.00 USD</span>
+						<a href="#" class="toys__item_hover below">LEARN MORE</a>
 					</div>
 					<div class="main__toys_item">
 						<img src="../README.md/img/toys/machine.png" alt="#">
 						<p class="toys__title">GATCHA GATCHA GUMBALL MACHINE</p>
-						<span class="toys__title bold">$56.00 USD</span>
+						<span class="toys__subtitle">$56.00 USD</span>
+						<a href="#" class="toys__item_hover">LEARN MORE</a>
 					</div>
 					<div class="main__toys_item">
 						<img src="../README.md/img/toys/candle.png" alt="#">
 						<p class="toys__title">CHRISTMAS ADVENT SCENTED CANDLE</p>
-						<span class="toys__title bold">$29.00 USD</span>
+						<span class="toys__subtitle">$29.00 USD</span>
+						<a href="#" class="toys__item_hover">LEARN MORE</a>
 					</div>
 					<div class="main__toys_item">
 						<img src="../README.md/img/toys/light.png" alt="#">
 						<p class="toys__title">TANGLE SPINNING TEA LIGHT</p>
-						<span class="toys__subtoys__title boldtitle">$56.00 USD</span>
+						<span class="toys__subtitle">$56.00 USD</span>
+						<a href="#" class="toys__item_hover">LEARN MORE</a>
 					</div>
 				</div>
 				<div class="main__toys_bottom">
@@ -178,10 +188,10 @@
 						</li>
 						<li>
 							<ul class="toys__bottom_pages">
-								<li><button>1</button></li>
-								<li><button>2</button></li>
-								<li><button>3</button></li>
-								<li><button>4</button></li>
+								<li><a href="#">1</a></li>
+								<li><a href="#">2</a></li>
+								<li><a href="#">3</a></li>
+								<li><a href="#">4</a></li>
 							</ul>
 						</li>
 						<li>
@@ -204,12 +214,12 @@
 							<h2 class="footer__column_title ftr__title">Navigation</h2>
 							<div class="footer__column_item">
 								<ul class=" footer__column_ul">
-									<li class=" footer__column_li">About Us</li>
-									<li class=" footer__column_li">Blog</li>
-									<li class=" footer__column_li">Design Services</li>
-									<li class=" footer__column_li">Featured On</li>
-									<li class=" footer__column_li">2018 Holiday Catalog</li>
-									<li class=" footer__column_li">Shop By Designer</li>
+									<li class=" footer__column_li"><a href="#" class="text__wht">About Us</a></li>
+									<li class=" footer__column_li"><a href="#" class="text__wht">Blog</a></li>
+									<li class=" footer__column_li"><a href="#" class="text__wht">Design Services</a></li>
+									<li class=" footer__column_li"><a href="#" class="text__wht">Featured On</a></li>
+									<li class=" footer__column_li"><a href="#" class="text__wht">2018 Holiday Catalog</a></li>
+									<li class=" footer__column_li"><a href="#" class="text__wht">Shop By Designer</a></li>
 								</ul>
 							</div>
 						</div>
@@ -217,12 +227,12 @@
 							<h2 class="footer__column_title ftr__title">Customer Information</h2>
 							<div class="footer__column_item">
 								<ul class=" footer__column_ul">
-									<li class=" footer__column_li">Contact Us</li>
-									<li class=" footer__column_li">Sale Exclusions</li>
-									<li class=" footer__column_li">Shipping & Returns</li>
-									<li class=" footer__column_li">Terms & Conditions</li>
-									<li class=" footer__column_li">Privacy Policy</li>
-									<li class=" footer__column_li">Search</li>
+									<li class=" footer__column_li"><a href="#" class="text__wht">Contact Us</a></li>
+									<li class=" footer__column_li"><a href="#" class="text__wht">Sale Exclusions</a></li>
+									<li class=" footer__column_li"><a href="#" class="text__wht">Shipping & Returns</a></li>
+									<li class=" footer__column_li"><a href="#" class="text__wht">Terms & Conditions</a></li>
+									<li class=" footer__column_li"><a href="#" class="text__wht">Privacy Policy</a></li>
+									<li class=" footer__column_li"><a href="#" class="text__wht">Search</a></li>
 								</ul>
 							</div>
 						</div>
@@ -230,7 +240,7 @@
 							<h2 class="footer__column_title ftr__title">Connect</h2>
 							<div class="footer__column_item">
 								<form method=POST action="mailto:directlineacademy.ru" enctype="text/plain">
-									<input name="Email" type="email" value="" placeholder="Email">
+									<input name="Email" type="email" value="" placeholder="Email" class="item__input">
 									<button name="Join" type="submit" value="Join" class="btn">Join</button>
 								</form>
 							</div>
@@ -283,31 +293,23 @@
 				</section>
 				<section class="footer__row_bottom">
 					<ul>
-						<li>
-							<div class="rating">
-								<p class="text text_white">Company Rating</p>
-								<svg class="footer__stars" width="98" height="17" viewBox="0 0 98 17" fill="none"
-									xmlns="http://www.w3.org/2000/svg">
-									<path
-										d="M7.60845 2.92705C7.9078 2.00574 9.21121 2.00574 9.51056 2.92705L10.5801 6.21885H14.0413C15.0101 6.21885 15.4128 7.45846 14.6291 8.02786L11.8289 10.0623L12.8985 13.3541C13.1979 14.2754 12.1434 15.0415 11.3597 14.4721L8.55951 12.4377L5.75934 14.4721C4.97563 15.0415 3.92115 14.2754 4.2205 13.3541L5.29007 10.0623L2.4899 8.02787C1.70619 7.45846 2.10896 6.21885 3.07768 6.21885H6.53888L7.60845 2.92705Z"
-										fill="white" />
-									<path
-										d="M27.6085 2.92705C27.9078 2.00574 29.2112 2.00574 29.5106 2.92705L30.5801 6.21885H34.0413C35.0101 6.21885 35.4128 7.45846 34.6291 8.02786L31.8289 10.0623L32.8985 13.3541C33.1979 14.2754 32.1434 15.0415 31.3597 14.4721L28.5595 12.4377L25.7593 14.4721C24.9756 15.0415 23.9211 14.2754 24.2205 13.3541L25.2901 10.0623L22.4899 8.02787C21.7062 7.45846 22.109 6.21885 23.0777 6.21885H26.5389L27.6085 2.92705Z"
-										fill="white" />
-									<path
-										d="M47.6085 2.92705C47.9078 2.00574 49.2112 2.00574 49.5106 2.92705L50.5801 6.21885H54.0413C55.0101 6.21885 55.4128 7.45846 54.6291 8.02786L51.8289 10.0623L52.8985 13.3541C53.1979 14.2754 52.1434 15.0415 51.3597 14.4721L48.5595 12.4377L45.7593 14.4721C44.9756 15.0415 43.9211 14.2754 44.2205 13.3541L45.2901 10.0623L42.4899 8.02787C41.7062 7.45846 42.109 6.21885 43.0777 6.21885H46.5389L47.6085 2.92705Z"
-										fill="white" />
-									<path
-										d="M67.6085 2.92705C67.9078 2.00574 69.2112 2.00574 69.5106 2.92705L70.5801 6.21885H74.0413C75.0101 6.21885 75.4128 7.45846 74.6291 8.02786L71.8289 10.0623L72.8985 13.3541C73.1979 14.2754 72.1434 15.0415 71.3597 14.4721L68.5595 12.4377L65.7593 14.4721C64.9756 15.0415 63.9211 14.2754 64.2205 13.3541L65.2901 10.0623L62.4899 8.02787C61.7062 7.45846 62.109 6.21885 63.0777 6.21885H66.5389L67.6085 2.92705Z"
-										fill="white" />
-									<path
-										d="M87.6085 2.92705C87.9078 2.00574 89.2112 2.00574 89.5106 2.92705L90.5801 6.21885H94.0413C95.0101 6.21885 95.4128 7.45846 94.6291 8.02786L91.8289 10.0623L92.8985 13.3541C93.1979 14.2754 92.1434 15.0415 91.3597 14.4721L88.5595 12.4377L85.7593 14.4721C84.9756 15.0415 83.9211 14.2754 84.2205 13.3541L85.2901 10.0623L82.4899 8.02787C81.7062 7.45846 82.109 6.21885 83.0777 6.21885H86.5389L87.6085 2.92705Z"
-										fill="white" />
-								</svg>
+						<li class="rating">
+							<span class=" text text__wht">Company Rating</span>
+							<div class="rating__area">
+								<input type="radio" id="star-5" name="rating" value="5">
+								<label for="star-5" title="Оценка «5»"></label>
+								<input type="radio" id="star-4" name="rating" value="4">
+								<label for="star-4" title="Оценка «4»"></label>
+								<input type="radio" id="star-3" name="rating" value="3">
+								<label for="star-3" title="Оценка «3»"></label>
+								<input type="radio" id="star-2" name="rating" value="2">
+								<label for="star-2" title="Оценка «2»"></label>
+								<input type="radio" id="star-1" name="rating" value="1">
+								<label for="star-1" title="Оценка «1»"></label>
 							</div>
 						</li>
 						<li>
-							<p class="text text_white">Copyright © 2018 Dlk • Design Life Kids</p>
+							<span class="text text__wht">Copyright © 2018 Dlk • Design Life Kids</span>
 						</li>
 						<li>
 							<a class="text link_footer">Web Design — Direct Line Development</a>
@@ -317,6 +319,50 @@
 			</div>
 		</div>
 	</footer>
+
+	<section class="popup" id=" popup">
+		<div class="container">
+			<div class="main__form">
+				<form action="#" method="post" class="modal">
+
+					<div class="form-text">
+						<label class="label" for="name">Name
+							<input type="text" id="name" name="name" class="form__input">
+						</label>
+					</div>
+
+					<div class="form-tel-email">
+						<label for="input__tel">Phone
+							<input type="tel" id="input__tel" class="form__input">
+						</label>
+
+						<label for="input__email">Email
+							<input type="email" id="input__email" class="form__input">
+						</label>
+					</div>
+
+					<div>
+						<p><label for="input__textarea">Message</label></p>
+						<textarea id="input__textarea" class="input__textarea"></textarea>
+					</div>
+
+					<div class="form__checkbox">
+						<input type="checkbox" name="yes" id="input__agreement" class="checkbox__input">
+						<label for="input__agreement" class="checkbox__label">By clicking on the button, you consent to the
+							processing of
+							your
+							personal
+							data</label>
+					</div>
+					<button type="submit" class="btn">SUBMIT</button>
+				</form>
+				<a href="#" class="popup__cross"><img src="../README.md/img/icons/cross.svg" alt="#"></a>
+			</div>
+
+		</div>
+	</section>
+	<script src="js/popup.js"></script>
+
 </body>
 
 </html>
