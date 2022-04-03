@@ -481,26 +481,6 @@ INPUT[type="email"] {
 	border-top: 1px solid #666666;
 }
 
-.rating{
-	display: flex;
-	align-items: center;
-}
-.rating span{
-   padding: 0px 25px 0px 0px;
-}
-
-.rating img{
-	position: relative;
-	padding: 0px 5px 0px 0px;
-	cursor: pointer;
-	z-index: 0;
-}
-
-.rating span:hover{
-	color:#C29974;
-}
-
-
 
 .footer__column_social ul{
 	display: flex;
@@ -601,7 +581,30 @@ input[type="radio"] {
 	
 }
 
+
 /* Rating */
+
+.rating{
+	display: flex;
+	align-items: center;
+}
+.rating span{
+   padding: 0px 25px 0px 0px;
+}
+
+.rating img{
+	position: relative;
+	padding: 0px 5px 0px 0px;
+	cursor: pointer;
+	z-index: 0;
+}
+
+
+.rating span:hover{
+	color:#C29974;
+}
+
+
 
 .rating__area{
 	overflow: hidden;

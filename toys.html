@@ -98,11 +98,13 @@
 							<legend class="main__legend" tabindex='1'>Delivery</legend>
 							<ul class="fieldset__delivery_list">
 								<li>
-									<input type="radio" name="shipping" id="free_ship" class="radio__input">
+									<input type="radio" name="shipping" id="free_ship" class="radio__input"
+										onclick="clickRadio(this)">
 									<label for="free_ship" class="radio__label" tabindex='1'>Free Shipping</label>
 								</li>
 								<li>
-									<input type="radio" name="shipping" id="fast_ship" class="radio__input">
+									<input type="radio" name="shipping" id="fast_ship" class="radio__input"
+										onclick="clickRadio(this)">
 									<label for="fast_ship" class="radio__label" tabindex='1'>Fast Shipping</label>
 								</li>
 							</ul>
@@ -114,15 +116,17 @@
 							<legend class="main__legend" tabindex='1'>Amount</legend>
 							<ul class="fieldset__amount_list">
 								<li>
-									<input type="radio" name="amount" id="0-5" class="input__amount">
+									<input type="radio" name="amount" id="0-5" class="input__amount" onclick="clickRadio(this)">
 									<label for="0-5" class="label__amount" tabindex='1'>0-5</label>
 								</li>
 								<li>
-									<input type="radio" name="amount" id="10-20" class="input__amount">
+									<input type="radio" name="amount" id="10-20" class="input__amount"
+										onclick="clickRadio(this)">
 									<label for="10-20" class="label__amount" tabindex='1'>10-20</label>
 								</li>
 								<li>
-									<input type="radio" name="amount" id="20-50" class="input__amount">
+									<input type="radio" name="amount" id="20-50" class="input__amount"
+										onclick="clickRadio(this)">
 									<label for="20-50" class="label__amount" tabindex='1'>20-50</label>
 								</li>
 							</ul>

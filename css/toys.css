@@ -190,16 +190,21 @@ input[type=range]::after{
 	background-color: #ffff;
 	cursor: pointer;
 	line-height: 22px;
+	transition: 0.5s;
 
 }
 
 .label__amount:hover{
-	background-color: #F3D0DB;
+	background-color: #EDDEEB;
+	transition: 0.5s;
 }
 
-.input__amount:checked + .label__amount:checked{
-	background-color: #EDDEEB;
+.input__amount:checked + .label__amount:focus{
+	background-color: #F3D0DB;
+	transition: 0.5s;
 }
+
+
 
 
 .fieldset__color_li li{

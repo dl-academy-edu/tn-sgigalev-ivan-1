@@ -1,3 +1,5 @@
+//popUP
+
 var popupLink = document.querySelector('.popup-link');
 var popup = document.querySelector('.popup');
 var closePopup = document.querySelector('.popup__cross');
@@ -30,3 +32,15 @@ window.addEventListener('keydown', function (event) {
 })
 
 
+// Удаление Focus с Radio button
+
+function clickRadio(el) {
+	var siblings = document.querySelectorAll("input[type='radio'][name='" + el.name + "']");
+	for (var i = 0; i < siblings.length; i++) {
+		if (siblings[i] != el)
+			siblings[i].oldChecked = false;
+	}
+	if (el.oldChecked)
+		el.checked = false;
+	el.oldChecked = el.checked;
+}
