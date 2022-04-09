@@ -15,8 +15,8 @@
 	<header class="header header__other">
 		<div class="container">
 			<div class="header__row">
-				<a href="index.html" class="header__logo"><svg width="102" height="52" viewBox="0 0 102 52" fill="none"
-						xmlns="http://www.w3.org/2000/svg" tabindex='1'>
+				<a href="index.html" class="header__logo" tabindex='1'><svg width="102" height="52" viewBox="0 0 102 52"
+						fill="none" xmlns="http://www.w3.org/2000/svg">
 						<path fill-rule="evenodd" clip-rule="evenodd"
 							d="M0.997559 0H19.1259C32.1442 0 41.4377 12.3713 41.4377 24.0356V27.7332C41.4377 39.3974 32.1442 51.7689 19.1259 51.7689H0.997559V0ZM38.6487 24.0356C38.6487 13.5132 30.2391 2.77333 19.1259 2.77333H3.78653V48.9956H19.1259C30.2391 48.9956 38.6487 38.2557 38.6487 27.7333V24.0356Z"
 							fill="#1E0606" />
@@ -26,11 +26,15 @@
 							fill="#1E0606" />
 					</svg>
 				</a>
-				<ul class="header__nav">
-					<li><a href="blog.html" tabindex='1'>Blog</a></li>
-					<li><a href="catalog.html" tabindex='1'>Catalog</a></li>
-					<li><a href="toys.html" tabindex='1'>About US</a></li>
-				</ul>
+
+				<nav class="header__nav">
+					<ul>
+						<li><a href="blog.html" tabindex='1'>Blog</a></li>
+						<li><a href="catalog.html" tabindex='1'>Catalog</a></li>
+						<li><a href="toys.html" tabindex='1'>About US</a></li>
+					</ul>
+				</nav>
+
 				<button class="button_nav" tabindex='1'><svg width="18" height="18" viewBox="0 0 18 18" fill="none"
 						xmlns="http://www.w3.org/2000/svg">
 						<path
@@ -38,7 +42,7 @@
 							fill="#1E0606" />
 					</svg>
 				</button>
-				<button class="footer__contact popup-link" tabindex='1'>Contact&nbsp&nbspUS</button>
+				<a href="contact.html" class="footer__contact" tabindex='1'>Contact&nbsp&nbspUS</a>
 			</div>
 		</div>
 	</header>
@@ -48,13 +52,13 @@
 
 			<ul class="main__nav_page">
 				<li>
-					<p href="#" class="page__link" tabindex='1'>Home</p>
+					<a href="index.html" class="page__link" tabindex='1'>Home</a>
 				</li>
 				<li>
-					<p href="#" class="page__link" tabindex='1'>Catalog</p>
+					<a href="catalog.html" class="page__link" tabindex='1'>Catalog</a>
 				</li>
 				<li>
-					<p href="#" class="page__link" tabindex='1'>Toys</p>
+					<a href="toys.html" class="page__link" tabindex='1'>Toys</a>
 				</li>
 			</ul>
 
@@ -63,7 +67,7 @@
 		<section class="main__forms">
 			<div class="container">
 
-				<form method="post" action="#" class="toys-main__form">
+				<div class="toys-main__form">
 					<div>
 						<p class="main__legend" tabindex='1'>Cost</p>
 						<input type="range" min="0" max="100" step="1" value="50" name="range" class="range">
@@ -135,7 +139,7 @@
 					<div class="main__header_button">
 						<button type="submit" class="btn" tabindex='1'>apply</button>
 					</div>
-				</form>
+				</div>
 			</div>
 		</section>
 
@@ -335,49 +339,6 @@
 			</div>
 		</div>
 	</footer>
-
-	<section class="popup" id=" popup">
-		<div class="container">
-			<div class="main__form">
-				<form action="#" method="post" class="modal">
-
-					<div class="form-text">
-						<label class="label" for="name">Name
-							<input type="text" id="name" name="name" class="form__input">
-						</label>
-					</div>
-
-					<div class="form-tel-email">
-						<label for="input__tel">Phone
-							<input type="tel" id="input__tel" class="form__input">
-						</label>
-
-						<label for="input__email">Email
-							<input type="email" id="input__email" class="form__input">
-						</label>
-					</div>
-
-					<div>
-						<p><label for="input__textarea">Message</label></p>
-						<textarea id="input__textarea" class="input__textarea"></textarea>
-					</div>
-
-					<div class="form__checkbox">
-						<input type="checkbox" name="yes" id="input__agreement" class="checkbox__input">
-						<label for="input__agreement" class="checkbox__label">By clicking on the button, you consent to the
-							processing of
-							your
-							personal
-							data</label>
-					</div>
-					<button type="submit" class="btn">SUBMIT</button>
-				</form>
-				<a href="#" class="popup__cross"><img src="../README.md/img/icons/cross.svg" alt="#"></a>
-			</div>
-
-		</div>
-	</section>
-	<script src="js/popup.js"></script>
 
 </body>
 

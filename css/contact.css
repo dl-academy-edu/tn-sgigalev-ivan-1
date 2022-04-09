@@ -31,7 +31,7 @@ label{
 	border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
-#input__agreement{
+.input__agreement{
 	border-radius: 3px;
 	width: 19px;
 	height: 19px;
@@ -39,7 +39,7 @@ label{
 	position: relative;
 }
 
-#input__textarea{
+.input__textarea{
 	margin: 0px 0px 20px 0px;
 	border: 1px solid rgba(0, 0, 0, 0.2);
 }
@@ -59,7 +59,7 @@ color: #C29974;
 }
 
 
-#input__textarea{
+.input__textarea{
 width:600px;
 resize: none;
 height:150px;

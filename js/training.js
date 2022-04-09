@@ -1,10 +1,6 @@
 
 
-"console strict"
-console.log(' Я учу JS');
 
-var colorEye = (' Цвет глаз пользователя');
-let user = (' Vasya');
-let userName = (user);
+let getMessage = (text, name) => text + ', ' + name + '!';
 
-console.log(user);
+console.log(getMessage('Hello', 'World'));

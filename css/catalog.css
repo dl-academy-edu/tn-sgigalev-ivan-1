@@ -41,3 +41,46 @@ margin: 0px 0px 23px 0px;
 .main__footer_text p:last-child{
 	margin: 0px 0px 0px 0px;
 }
+
+
+.img-shirt{
+	background-image: url('../img/main/shirt.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.img-socks{
+	background-image: url('../img/main/socks.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.img-deer{
+	background-image: url('../img/main/deer.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.img-monkey{
+	background-image: url('../img/main/monkey.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.img-flamingo{
+	background-image: url('../img/catalog/flamingo.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.img-dress{
+	background-image: url('../img/catalog/dress.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}

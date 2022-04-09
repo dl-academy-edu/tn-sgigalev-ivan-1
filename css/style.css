@@ -28,8 +28,12 @@
 	font-style: normal;
  }
  
-  
- 
+
+.container{
+	max-width: 1210px;
+	margin: 0 auto;
+	padding: 0px 15px;
+}
 
 
 
@@ -145,12 +149,6 @@ body{
 	flex: 1 1 auto;
 }
 
-.container{
-	max-width: 1210px;
-	margin: 0 auto;
-	padding: 0px 15px;
-}
-
 
 /* Products */
 
@@ -252,48 +250,6 @@ body{
 	height: 270px;
 }
 
-.img-shirt{
-	background-image: url('../img/main/shirt.jpg');
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-}
-
-.img-socks{
-	background-image: url('../img/main/socks.jpg');
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-}
-
-.img-deer{
-	background-image: url('../img/main/deer.jpg');
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-}
-
-.img-monkey{
-	background-image: url('../img/main/monkey.jpg');
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-}
-
-.img-flamingo{
-	background-image: url('../img/catalog/flamingo.jpg');
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-}
-
-.img-dress{
-	background-image: url('../img/catalog/dress.jpg');
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-}
-
 /* Titles & Subtitles */
 
 .subtitle{
@@ -375,6 +331,10 @@ a{
 
 .header__nav{
 	flex: 1 1 auto;
+	display: flex;
+}
+
+.header__nav ul{
 	display: flex;
 }
 

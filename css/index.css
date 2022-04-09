@@ -293,3 +293,32 @@ padding: 11px 180px 11px 60px;
 	max-height: 209px;
 }
 
+
+.img-shirt{
+	background-image: url('../img/main/shirt.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.img-socks{
+	background-image: url('../img/main/socks.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.img-deer{
+	background-image: url('../img/main/deer.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.img-monkey{
+	background-image: url('../img/main/monkey.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
